@@ -1,0 +1,380 @@
+/********** ACCOUNT REG SCREEN **********/
+.account-reg-content {
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.account-reg-form-box{
+    display: grid;
+    grid-template-rows: 165px 73px 179px 39px 73px;
+    justify-content: center;
+    width: 480px;
+    height: 529px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.account-reg-title{
+    display: grid;
+    align-items: center;
+}
+
+.account-unbind-title{
+    text-align: center;
+    font-size: 90px;
+    width: 100%;
+    padding-top: 10px;
+    left: 10%;
+    right: 10%;
+    color: #130000;
+}
+
+.account-reg-divider{
+    height: 1px;
+    width: 200px;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.account-reg-subtitle{
+    display: grid;
+    row-gap: 15px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    color: #707070;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.account-reg-choose-subtitle{
+    font-weight: bold;
+    font-size: 18px;
+    color: #9D0000;
+}
+
+.account-reg-subtitle div{
+    justify-content: center;
+    text-align: center;
+}
+
+.account-type-btns{
+    display: grid;
+    grid-template-rows: 45px 45px;
+    row-gap: 35px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.account-reg-login-redirect{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #707070;
+}
+
+.account-reg-login-redirect:hover{
+    text-decoration: underline;
+    color: #9D0000;
+}
+
+.account-reg-admin{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.personal-btn{
+    width: 300px;
+    height: 45px;
+    cursor: pointer;
+    display: block;
+    background: #fff;
+    color: #9D0000;
+    border: 1px #9D0000 solid;
+    outline: none;
+    border-radius: 8px;
+    font-size: 28px;
+}
+.personal-btn:hover{
+    background-color: #9D0000;
+    color: #fff;
+}
+.account-reg-business-btn{
+    width: 300px;
+    height: 45px;
+    cursor: pointer;
+    display: block;
+    background: #fff;
+    color: #9D0000;
+    border: 1px #9D0000 solid;
+    outline: none;
+    border-radius: 8px;
+    font-size: 28px;
+}
+.account-reg-business-btn:hover{
+    background-color: #9D0000;
+    color: #fff;
+}
+
+/********** REGISTER SCREEN **********/
+
+/*.1 Content & Backdrop Layout*/
+.register-content{
+    width: 100%;
+    height: 100%;
+
+    background-color: #f7f7f7;
+    background-position: center;
+
+    display: grid;
+    grid-template-columns: 600px 541px;
+    position: absolute;
+
+    align-content: center;
+    justify-content: center;
+}
+
+.register-form-box{
+    width: 600px;
+    height: 670px;
+
+    background: #fff;
+
+    display: grid;
+    grid-template-rows: 140px 394px 72px 64px;
+    position: relative;
+
+    justify-content: center;
+    align-content: center;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*.2 Title Section*/
+.reg-title{
+    display: grid;
+    align-items: center;
+}
+
+.reg-unbind-title{
+    text-align: center;
+    font-size: 90px;
+    width: 100%;
+    padding-top: 10px;
+    left: 10%;
+    right: 10%;
+    color: #130000;
+}
+
+.reg-title-divider{
+    height: 1px;
+    width: 200px;
+
+    justify-content: center;
+
+    margin: 0 auto;
+
+    background-color: black;
+}
+
+/*.3 User Form Section*/
+.register-input-group{
+    width: 402px;
+
+    display: grid;
+    grid-template-rows: 33px 33px 33px 33px 33px 33px;
+    row-gap: 29px;
+
+    justify-content: center;
+    align-content: center;
+}
+
+.reg-name-input{
+    display: grid;
+    grid-template-columns: 187px 187px;
+    column-gap: 26px;
+}
+
+.name-input{
+    outline: none;
+
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+}
+
+.register-input {
+    width: 402px;
+    height: 33px;
+
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+
+    outline: none;
+    background: transparent;
+}
+
+.reg-check-box{
+    display: grid;
+    grid-template-columns: 17px 266px;
+    column-gap: 20px;
+}
+
+/*.4 Register Buttons Section*/
+.register-btns{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    column-gap: 50px;
+
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.reg-sign-up-btn{
+    width: 150px;
+    height: 40px;
+
+    font-size: 28px;
+
+    border: none;
+    border-radius: 10px;
+    background-color: #9D0000;
+    color: white;
+}
+
+.reg-back-btn{
+    width: 150px;
+    height: 40px;
+
+    font-size: 28px;
+
+    border: none;
+    border-radius: 10px;
+    background-color: #130000;
+    color: white;
+}
+
+/*.5 Login Redirect Section*/
+.reg-login-redirect{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: lighter;
+
+    color: #707070;
+}
+
+/*.6 Image Panel*/
+.reg-image{
+    display: flex;
+    float: left;
+    justify-content: center;
+    width: 541px;
+    height: 710px;
+}
+
+.reg-image-section{
+    height: auto;
+    width: auto;
+    display: block;
+}
+
+
+
+.unbind-subtitle{
+    width: 100%;
+    text-align: center;
+}
+
+.button-box{
+    width: 220px;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+}
+
+.toggle-button {
+    padding: 10px 30px;
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    font-style: normal;
+}
+
+.input-group{
+    top: 100px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #9D221F;
+    color: white;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 78px;
+    position: absolute;
+}
+
+#login{
+    left: 50px;
+}
+
+#register{
+    left: 50px;
+}
+
+

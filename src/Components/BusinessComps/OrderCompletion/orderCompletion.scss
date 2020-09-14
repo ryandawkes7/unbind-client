@@ -1,0 +1,143 @@
+.order-cmp-body{
+    width: fit-content;
+
+    padding: 2rem;
+}
+
+.order-cmp-container{
+    display: block;
+
+    width: fit-content;
+
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+.order-cmp-btn{
+    width: 25rem;
+    height: fit-content;
+
+    border: none;
+    border-radius: 10px;
+
+    margin: 0 auto;
+
+    color: white;
+
+
+
+    header {
+        border-radius: 10px 10px 0 0;
+    }
+    header, p{
+        padding: 0.5rem 0 0.5rem;
+    }
+}
+
+.rate {
+    background-color: #2C2D35;
+
+    header { background-color: #515151; }
+}
+
+.time {
+    background-color: #03094D;
+
+    header {
+        background-color: #313863;
+    }
+}
+
+.donut-rate, .pie-time{
+    padding: 2rem 0 2rem;
+    margin: 0 auto;
+
+    width: 20rem;
+}
+
+// STAT BOX SECTION
+
+.stat-box{
+    background-color: #F7F7F7;
+
+    display: flex;
+    flex-direction: row;
+
+    width: 50rem;
+    height: 14rem;
+
+    border-radius: 10px;
+
+    margin: 0 auto 2rem;
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 3px 15px 0 rgba(0, 0, 0, 0.29);
+}
+
+.stat-grid-display {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.stat-area {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+    text-align: center;
+
+    img{
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 1rem;
+    }
+
+    h4{
+        line-height: 2rem;
+    }
+
+}
+
+// END OF STAT BOX SECTION
+
+// DATE BOX SECTION
+
+.date-box {
+    background-color: #F7F7F7;
+
+    display: flex;
+
+    width: 50rem;
+    height: 8rem;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 3px 10px 0 rgba(0, 0, 0, 0.29);
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img{ padding: 0 2rem;}
+}
+
+.select-date {
+    margin: 0 1rem;
+    border: none;
+
+    padding: 0.5rem;
+
+    border-radius: 5px;
+
+    color: black;
+
+    text-transform: uppercase;
+
+    background-color: #D7D7D7;
+}

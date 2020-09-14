@@ -1,0 +1,30 @@
+.info-container{
+    width: fit-content;
+    height: fit-content;
+
+    background-color: #F7F7F7;
+
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.39) ;
+}
+
+.info-container label {
+    font-weight: 700;
+    font-size: 20px;
+
+    display: inline-block;
+    width: 20rem;
+    text-align: left;
+
+    padding-right: 5rem;
+}
+
+.info-comp{
+    padding: 2rem;
+}
+
+.info-container input, textarea, select {
+    width: 58rem;
+    height: 5rem;
+
+    padding: 1rem;
+}

@@ -1,0 +1,48 @@
+.bus-services-container{
+}
+
+.new-service{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.new-service-form{
+  display: block;
+
+  align-items: center;
+
+  input, select{
+    margin: 1rem 0 2.5rem;
+  }
+
+  .prod-input{
+    min-height: 2rem;
+    min-width: 22rem;
+    padding: 0.5rem;
+  }
+
+  .number-point{
+    color: #9D0000;
+    padding-right: 2rem;
+  }
+}
+
+.new-grid{
+  display: grid;
+
+  height: fit-content;
+  width: fit-content;
+
+  align-items: center;
+
+  padding: 2rem;
+  margin: 2rem 5rem 2rem 5rem;
+
+  grid-template-rows: 15rem 15rem 15rem;
+}
+
+.service-submit-btn{
+  margin-left: 90%;
+
+}

@@ -1,0 +1,164 @@
+/********** MESSENGER SCREEN **********/
+.msngr-screen{
+    height: 100%;
+    width: 100%;
+}
+.msngr-header{
+    display: flex;
+
+    align-items: center;
+
+    height: 10vh;
+    width: 100%;
+}
+.msngr-header h3{
+    margin-left: 2rem;
+}
+
+.msngr-main{
+    width: 100%;
+    height: 100%;
+}
+.msngr-grid{
+    display: grid;
+    grid-template-columns: 25% 75%;
+
+    width: 100%;
+    height: 100%;
+}
+
+.msngr-chats{
+    display: block;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 78vh;
+    width: 100%;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    border: 1px solid black;
+
+}
+
+.active-chats{
+    display: grid;
+    grid-template-rows: 90% 10%;
+
+    border: 2px solid black;
+}
+
+.active-chat-content{
+    display: block;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 70vh;
+    width: 100%;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.active-chats footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+    border: 1px solid #130000;
+    justify-content: space-between;
+    background-color: #FAFAFA;
+}
+
+.msg-btn{
+    display: inline-block;
+    position: relative;
+
+    background:none;
+    border: none;
+}
+
+.msg-input{
+    display: inline-block;
+    position: relative;
+
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+    background-color: #f1f1f1;
+
+    padding: 0px 10px;
+
+    width: 50rem;
+    max-width: 1200px;
+
+}
+
+/* Sending Message Styling */
+.msg-outer-container{
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px 20px;
+}
+.msg-outer-container .msg-name-tag{
+    display: flex;
+    justify-content: flex-end;
+    color: #999;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.msg-outer-container .msg-bubble-container{
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.msg-outer-container .msg-bubble-container .msg-bubble{
+    margin: 1px 0;
+    background: #9D0000;
+    color: #fff;
+    padding: 10px 30px;
+    max-width: 25%;
+    border-radius: 15px 20px 0 15px;
+}
+
+/* Receiving Message Styling */
+.inc-outer-container{
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px 20px;
+}
+
+.inc-outer-container .inc-name-tag{
+    display: flex;
+    justify-content: flex-start;
+    color: #999;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.inc-outer-container .inc-bubble-container{
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.inc-outer-container .inc-bubble-container .inc-bubble{
+    margin: 1px 0;
+    background: #777777;
+    color: #FFF;
+    padding: 10px 30px;
+    max-width: 25%;
+    border-radius: 20px 15px 15px 0;
+}

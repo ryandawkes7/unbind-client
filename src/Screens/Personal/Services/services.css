@@ -1,0 +1,476 @@
+/********** SERVICES PAGE **********/
+.services-back{
+    overflow-x: hidden;
+}
+
+.services-back-img{
+    position: relative;
+    z-index: -1;
+    max-width: 100vw;
+
+    display: flex;
+    justify-content: center;
+}
+.services-back-img img{
+    position: absolute;
+    max-width: 100vw;
+}
+
+.services-title-section{
+    height: 824px;
+
+    color: white;
+
+    display: flex;
+
+    align-content: center;
+    justify-content: center;
+}
+
+.services-title-grid{
+    display: grid;
+    grid-template-rows: 204px 210px 92px;
+
+    align-content: center;
+    justify-content: center;
+}
+
+.services-title-text{
+    display: grid;
+    grid-template-rows: 102px 102px;
+
+    align-items: center;
+}
+
+.services-title-text h1{
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.services-search-bar{
+    display: flex;
+
+    align-content: center;
+    align-items: center;
+    height: 100%;
+
+    border: none;
+
+}
+
+.serv-search-input{
+    height: 52px;
+    width: 438px;
+
+    text-align: center;
+
+    border: none;
+    border-radius: 10px 0 0 10px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.serv-search-btn{
+    height: 52px;
+    width: 82px;
+
+    background-color: #9D0000;
+    color: white;
+
+    border: none;
+    border-radius: 0 10px 10px 0;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.serv-search-btn:hover{
+    background-color: #C02721;
+}
+
+.serv-filter-options{
+    display: grid;
+    grid-template-columns: 207px 207px 207px;
+    column-gap: 28px;
+
+    align-items: center;
+    align-content: center;
+}
+.serv-category-drop{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    display: inline-block;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.serv-area-drop{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    display: inline-block;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.serv-price-drop{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    display: inline-block;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.serv-drop-btn{
+    height: 39px;
+    width: 207px;
+
+    background-color: #ffffff;
+    color: black;
+
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: lighter;
+
+    border: none;
+    border-radius: 10px;
+}
+
+.serv-ctg-content{
+    display: none;
+    position: absolute;
+
+    z-index: 1;
+
+    width: 80%;
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 0 0 10px 10px;
+}
+
+.serv-area-content{
+    display: none;
+    position: absolute;
+
+    z-index: 1;
+
+    width: 80%;
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 0 0 10px 10px;
+}
+
+.serv-price-content{
+    display: none;
+    position: absolute;
+
+    z-index: 1;
+
+    width: 80%;
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 0 0 10px 10px;
+}
+
+.serv-ctg-content a {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+.serv-area-content a {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+.serv-price-content a {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+.serv-ctg-content a:hover {background-color: #EFBFC1;}
+.serv-category-drop:hover .serv-ctg-content {display: block;}
+.serv-area-content a:hover {background-color: #EFBFC1;}
+.serv-area-drop:hover .serv-area-content {display: block;}
+.serv-price-content a:hover {background-color: #EFBFC1;}
+.serv-price-drop:hover .serv-price-content {display: block;}
+
+.serv-drop-divider{
+    height: 1px;
+    width: 80%;
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+    background-color: darkgray;
+}
+
+.services-main{
+
+}
+
+.m-serv-header{
+    display: grid;
+    grid-template-columns: 756px 393px;
+    column-gap: 144px;
+
+    height: 200px;
+
+    background-color: lightgray;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.serv-type-btns{
+    display: grid;
+    grid-template-columns: 266px 241px 187px;
+    column-gap: 31px;
+
+    border: none;
+    background: none;
+    color: #130000;
+
+    font-family: "Proxima Nova";
+    font-size: 30px;
+}
+
+.serv-sort-btn{
+    display: grid;
+    grid-template-columns: 172px 195px;
+    column-gap: 26px;
+
+    font-family: "Proxima Nova";
+    font-size: 30px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+.serv-sort-drop{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    display: inline-block;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.serv-sort-drop-btn{
+    height: 39px;
+    width: 195px;
+
+    background-color: #ffffff;
+    color: black;
+
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: lighter;
+
+    border: none;
+    border-radius: 10px;
+}
+
+.serv-sort-content{
+    display: none;
+    position: absolute;
+
+    z-index: 1;
+
+    width: 80%;
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 0 0 10px 10px;
+}
+
+.serv-sort-content a{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    color: black;
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+.serv-sort-content a:hover {background-color: #EFBFC1;}
+.serv-sort-drop:hover .serv-sort-content {display: block;}
+
+.services-grid-layout{
+    display: grid;
+    grid-template-rows: 391px 391px 391px;
+    grid-template-columns: 385px 385px 385px;
+    column-gap: 75px;
+    row-gap: 99px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    justify-content: center;
+    align-content: center;
+}
+
+.serv-box-cont{
+    display: grid;
+    grid-template-rows: 188px 203px;
+
+    justify-content: center;
+    align-items: center;
+
+    background: #F7F7F7;
+    border: none;
+    border-radius: 10px;
+    color: #130000;
+}
+
+.serv-box-details{
+    display: grid;
+    grid-template-rows: 66px 74px 63px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.serv-box-title{
+    display: grid;
+    grid-template-columns: 166px 96px;
+    column-gap: 90px;
+
+    align-content: center;
+    justify-content: center;
+}
+
+.serv-box-divider{
+    height: 1px;
+    width: 90%;
+    margin-top: 5px;
+    background-color: #130000;
+}
+
+.serv-box-title h2{
+    font-family: "Proxima Nova";
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.serv-rating{
+    display: grid;
+    grid-template-rows: 16px 15px;
+    row-gap: 5px;
+
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+
+    font-family: "Proxima Nova";
+    font-size: 12px;
+}
+
+.serv-box-desc{
+    display: flex;
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+
+    font-family: "Proxima Nova";
+    font-size: 18px;
+
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: rgba(213,213,213,0.98);
+}
+
+.serv-box-price{
+    display: grid;
+    grid-template-columns: 201px 112px;
+    column-gap: 35px;
+
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.serv-box-company{
+    display: grid;
+    grid-template-columns: 41px 149px;
+    column-gap: 11px;
+}
+
+.serv-box-pricing{
+    display: grid;
+    grid-template-columns: 32px 70px;
+    column-gap: 10px;
+
+    justify-content: center;
+    text-align: center;
+}
+
+.serv-box-pricing p{
+    display: flex;
+    font-family: "Proxima Nova";
+    font-size: 12px;
+    align-items: flex-end;
+}
+
+.serv-box-price-cont{
+    display: flex;
+
+    width: 70px;
+    height: 29px;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    background-color: #9D0000;
+    color: white;
+}

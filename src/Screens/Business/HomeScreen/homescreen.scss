@@ -1,0 +1,95 @@
+.business-graph{
+    padding: 2rem 0 2rem;
+}
+
+.business-title{
+    display: block;
+    text-align: center;
+    justify-content: center;
+
+    div{ background-color: black; height: 1px; width: 25%; margin: 1.5rem auto 3rem ; }
+}
+
+@for $i from 1 through 100 {
+    .percentage-#{$i}:after {
+        $value: ($i * 1%);
+        width: $value;
+    }
+}
+
+.percentage {
+    background: repeating-linear-gradient(
+        to right,
+        #DDD,
+        #DDD 1px,
+        #FFF 1px,
+        #FFF 5%
+    );
+}
+
+.chart-controls {
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.graph-btn{
+    width: 20rem;
+    height: 10rem;
+    font-size: 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    color: white;
+
+    margin-bottom: 2rem;
+
+    header{ border-radius: 10px 10px 0 0 }
+    header, p { padding: 1rem; }
+
+    outline-color: inherit;
+}
+.graph-btn:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.revenue {
+    background-color: #9D0000;
+    header { background-color: #7E0202; }
+}
+.sales {
+    background-color: #79E7F3;
+    header { background-color: #7DD8E2; }
+}
+.growth {
+    background-color: #79F38C;
+    header { background-color: #71E986; }
+}
+.avg-order {
+    background-color: #A3A6A3;
+    header { background-color: #948989; }
+}
+
+.chart-container{
+    display: flex;
+    justify-content: center;
+
+    width: fit-content;
+
+    margin: 2rem auto;
+}
+
+.business-map{
+    display: flex;
+
+    margin: 0 auto;
+
+    justify-content: center;
+    align-items: center;
+    .order-completion{
+        border: 1px solid black;
+    }
+
+}

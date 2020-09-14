@@ -1,0 +1,366 @@
+.header{
+    grid-area: header;
+    height: 100px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+    z-index: 998;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    padding: 0 2rem;
+
+    position: relative;
+}
+
+.brand a{
+    text-decoration: none;
+    color: #000;
+}
+
+.brand:before {
+    content: '';
+    position: absolute;
+
+    width: 0; height: 1.5rem;
+    display: block;
+
+    top: 0;
+    left: 0;
+    background: #9D0000;
+
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+}
+
+.brand:after {
+    content: '';
+    position: absolute;
+
+    width: 0; height: 1.5rem;
+    display: block;
+
+    bottom: 0;
+    left: 0;
+    background: #9D0000;
+
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+
+}
+
+.brand:hover:before{
+    width: 100%;
+    left: 0;
+    background: #9D0000;
+    margin: 0 auto;
+    color: #9D0000;
+}
+
+.brand:hover:after{
+    width: 100%;
+    left: 0;
+    background: #9D0000;
+    margin: 0 auto;
+    color: #9D0000;
+}
+
+.brand:hover a{
+    transition: color .2s ease;
+    color: #9D0000;
+}
+
+/*.brand a{*/
+/*    color: #000;*/
+/*    font-size: 48px;*/
+/*    font-weight: 900;*/
+/*    text-decoration: none;*/
+
+/*    margin-left: 2rem;*/
+/*}*/
+
+/*.brand:after a{*/
+/*    transition: 500ms ease-in;*/
+/*    color: #9D0000;*/
+/*    border-bottom: 3px solid #9D0000;*/
+/*}*/
+
+.header-links a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.header-links ul{
+    list-style-type: none;
+    top: 50%;
+}
+.header-links a:hover{
+    color: white;
+}
+
+nav li{
+    list-style: none;
+    display: inline-block;
+}
+
+/********** LOGGED IN NAVBAR DISPLAY **********/
+.account-display{
+    display: grid;
+    grid-template-columns: 80px 80px 80px 1px 150px auto;
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 40px;
+}
+
+.nav-button p{
+    color: black;
+}
+
+.nav-button:hover p {
+    color: #9D0000;
+    text-decoration: underline;
+}
+
+/* Services Dropdown Button */
+.services-drop{
+    position: relative;
+    display: flex;
+
+    justify-content: center;
+
+    margin: 0 auto;
+    width: 80px;
+    height: 100px;
+}
+
+.serv-btn-container {
+    width: 80px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-btn p:hover{
+    color: #9D0000;
+    text-decoration: underline;
+}
+
+.services-content {
+    display: none;
+    position: absolute;
+
+
+    top: 100px;
+
+    z-index: 5;
+
+    background-color: #f1f1f1;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+}
+
+.services-content a{
+    color: black;
+
+    padding: 1rem;
+}
+
+.services-content a:hover {background-color: #9D0000}
+.services-drop:hover .services-content {display: flex; flex-direction: column;}
+
+/* End of Services Dropdown Button */
+
+.lin-divider{
+    height: 50px;
+    width: 1px;
+    background-color: black;
+}
+
+/* Icon Buttons in Navbar Section */
+.nav-icon-images{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.nav-icon{
+    padding: 0.5rem;
+    position: relative;
+}
+
+.nav-icon:hover {
+    border-bottom: 5px solid #9D0000;
+    border-radius: 5px;
+}
+/* End of Icon Buttons in Navbar Section */
+
+
+
+.messages-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+}
+.notification-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+}
+.basket-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+}
+
+/********** LOGGED OUT NAVBAR DISPLAY **********/
+.no-account-display{
+    display: grid;
+    grid-template-columns: 80px 80px 80px 1px 120px 120px;
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 40px;
+}
+
+.business-btn p{
+    color: black;
+}
+
+.business-btn p:hover {
+    color: #9D0000;
+    text-decoration: underline;
+}
+
+.about-btn p{
+    color: black;
+}
+.about-btn p:hover{
+    color: #9D0000;
+    text-decoration: underline;
+}
+
+.no-acc-divider{
+    width: 1px;
+    height: 50px;
+    color: black;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.icon-button img{
+    width: 20px;
+    height: 10px;
+}
+
+/*********** LOGIN & REG BTN DESIGN **********/
+
+.login-btn-back{
+    display: flex;
+    flex-direction: column;
+    background-color: #9D0000;
+    border-radius: 8px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+}
+.login-btn-back p{
+    font-size: 26px;
+}
+.login-btn-back:hover{
+    background-color: #C02721;
+}
+
+.register-btn-back{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 8px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+}
+.register-btn-back p{
+    font-size: 26px;
+}
+.register-btn-back:hover{
+    background-color: rgba(37,37,37,0.98);
+    color: #9D0000;
+}
+
+/* Profile Dropdown Menu*/
+.profile-drop{
+    width: 30rem;
+    height: 100px;
+
+    position: relative;
+    display: inline-block;
+}
+
+.prof-btn-container {
+    width: 30rem;
+    height: 100%;
+}
+
+.prof-btn {
+    width: inherit;
+    height: inherit;
+
+    background: none;
+    border: none;
+    text-transform: capitalize;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+.prof-btn h4, img{
+    padding: 0 1rem;
+}
+
+.prof-drop-content {
+    display: none;
+    position: absolute;
+
+    width: inherit;
+
+
+    z-index: 5;
+
+    background-color: #f1f1f1;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+}
+.prof-drop-content a {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem 0;
+
+    height: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+.prof-drop-content a:hover {background-color: #9D0000}
+.profile-drop:hover .prof-drop-content {display: flex; flex-direction: column;}

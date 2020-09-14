@@ -1,0 +1,51 @@
+/* Business Header Styling */
+.business-hdr{
+    height: 6rem;
+    border: 1px solid black;
+
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.business-hdr div{
+    display: flex;
+
+    border-radius: 5px;
+
+    height: 90%;
+    width: 90%;
+
+    margin: auto;
+
+    text-align: center;
+    align-items: center;
+}
+.business-hdr div:hover {
+    transition-duration: .25s;
+
+    background-color: #9D0000;
+}
+.business-hdr div:hover .business-hdr-link{
+    color: white;
+}
+
+.business-hdr-link{
+    display: flex;
+
+    width: calc(100vw / 6);
+
+    justify-content: center;
+
+    text-decoration: none;
+    color: black;
+}
+
+.business-hdr > .business-hdr-link {
+    border-right: 1px solid gray;
+}
+/* End of Business Header Styling */

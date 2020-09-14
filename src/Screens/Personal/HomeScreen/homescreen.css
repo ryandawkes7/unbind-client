@@ -1,0 +1,235 @@
+.main{
+    grid-area: main;
+}
+
+.carousel-component{
+    position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carousel-title{
+    position: absolute;
+    display: flex;
+    top: 30%;
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.carousel-button{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 65%;
+    width: 300px;
+    height: 60px;
+    background-color: #9D0000;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+/********** RECENT ITEMS **********/
+.most-recent-section{
+    justify-content: center;
+}
+
+
+.most-recent-title{
+    font-size: 30px;
+    padding-top: 120px;
+    padding-left: 120px;
+}
+
+.recent-containers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 110px;
+    padding-right: 110px;
+
+}
+
+.recent-container{
+    width: 306px;
+    height: 410px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+
+.recent-image{
+    width: 306px;
+    height: 189px;
+}
+
+.recent-text-container{
+    width: 306px;
+    height: 221px;
+    background-color: lightgray;
+    border-radius: 0 0 20px 20px;
+}
+
+.recent-item-title{
+    padding-left: 30px;
+    padding-bottom: 16px;
+    padding-top: 40px;
+    font-size: 15px;
+}
+
+.recent-info-text{
+    width: 235px;
+    height: 55px;
+    overflow: hidden;
+    padding-left: 30px;
+}
+
+.divider-container{
+    padding-top: 25px;
+}
+
+.recent-divider{
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.recent-button{
+    position: absolute;
+    left: 10%;
+    bottom: 38px;
+}
+
+.recent-buy-btn{
+    width: 66px;
+    height: 26px;
+    background-color: #9D0000;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.recent-company-title{
+    position: absolute;
+    right:10%;
+    bottom: 43px;
+}
+
+.recent-company-name{
+
+}
+
+/********** INTRO PAGE **********/
+.intro{
+    height: 1144px;
+    grid-template-areas:
+	"intro-about"
+	"intro-services"
+	"intro-business";
+}
+
+.intro-back{
+    position: absolute;
+    width: 100%;
+    height: 740px;
+    background-color: gray;
+    background-size: cover;
+    z-index: -1;
+    overflow: hidden;
+    align-content: center;
+    justify-content: center;
+}
+
+.intro-backdrop{
+    display: grid;
+    grid-template-rows: 502px 517px;
+    row-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1070px;
+    align-content: center;
+}
+
+.intro-title{
+    color: white;
+    display: grid;
+    padding-top: 220px;
+    grid-template-rows: 46px 2px 22px;
+    row-gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.intro-title h1 {
+    font-size: 110px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+.intro-title h2{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.intro-divider{
+    height: 2px;
+    background-color: white;
+    margin-left: 42%;
+    margin-right: 42%;
+}
+
+.intro-info-pnls{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 64px;
+}
+
+.intro-info-panel{
+    display: grid;
+    grid-template-rows: 187px 330px;
+    width: 373px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.intro-panel-hdr{
+    display: flex;
+    flex-direction: column;
+    background-color: #9D0000;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.intro-panel-hdr img{
+    height: 56px;
+    width: 56px;
+    padding-bottom: 20px;
+}
+.intro-panel-hdr p{
+    font-size: 24px;
+    font-weight: lighter;
+    color: white;
+}
+
+.intro-box{
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.thumbs-wrapper{
+    display: none;
+}

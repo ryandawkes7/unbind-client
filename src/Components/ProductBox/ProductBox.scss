@@ -1,0 +1,103 @@
+.prod-box-container{
+  width: 480px;
+  min-height: 488px;
+  height: 488px;
+
+  background-color: #F7F7F7;
+
+  border-radius: 10px;
+
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.4), 0 10px 20px 0 rgba(0, 0, 0, 0.29);
+
+  margin: 2rem;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#over .prod-box-header{
+  margin: 0 auto;
+  display: flex;
+}
+
+.prod-info-container {
+  display: flex;
+  border: 1px solid black;
+  height: calc(100% - 232px);
+}
+
+.prod-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 2rem 0 2rem;
+
+  .prod-box-title{
+    border-bottom: 2px solid black;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.prod-description-container {
+  display: flex;
+
+  align-items: center;
+
+  margin: 5% 5%;
+
+  min-height: 80px;
+
+  p{
+    overflow-wrap: break-word;
+    width: 100%;
+  }
+}
+
+.prod-footer-container {
+  position: absolute;
+
+  bottom: 0;
+  width: 100%;
+  padding: 2rem 0 2rem 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  .footer-comp{
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 2rem;
+  }
+
+  .company{
+    img{
+      margin-right: 0.5rem;
+    }
+  }
+  .price{
+    button{
+      min-width: 8rem;
+      width: fit-content;
+      height: 5rem;
+
+      background-color: #9D0000;
+      color: white;
+
+      border: none;
+      border-radius: 5px;
+      margin-left: 0.5rem;
+
+      letter-spacing: 1px;
+
+      h3{
+        padding: 1rem;
+      }
+    }
+  }
+
+}

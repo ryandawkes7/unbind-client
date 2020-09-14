@@ -1,0 +1,169 @@
+/********** LOGIN SCREEN **********/
+
+/*.1 Content & Backdrop Layouts*/
+.login-content {
+    width: 100%;
+    height: 100%;
+
+    background-color: #f7f7f7;
+    background-position: center;
+
+    display: flex;
+
+    align-content: center;
+    justify-content: center;
+}
+
+.login-form-box{
+    width: 600px;
+    height: 600px;
+
+    background: #fff;
+
+    display: grid;
+    grid-template-rows: 147px 80px 279px 94px;
+
+    justify-content: center;
+    align-content: center;
+    margin: 6% auto;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*.2 Title Section*/
+.login-title{
+    display: grid;
+    align-content: center;
+    width: 100%
+}
+
+.login-unbind-title{
+    width: 100%;
+
+    text-align: center;
+
+    color: #130000;
+
+    padding-top: 10px;
+    left: 10%;
+    right: 10%;
+
+    font-size: 90px;
+}
+
+.login-divider{
+    height: 1px;
+    width: 200px;
+
+    justify-content: center;
+
+    margin: 0 auto;
+
+    background-color: black;
+}
+
+/*.3 Subtitle Section*/
+.login-subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-input-group{
+    display: grid;
+    grid-template-rows: 41px 41px 25px 40px;
+    row-gap: 35px;
+
+    width: 100%;
+
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.login-input {
+    width: 400px;
+    height: 100%;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.login-interactions{
+    display: grid;
+    grid-template-columns: 156px 131px;
+    column-gap: 113px;
+
+    align-items: center;
+    align-content: center;
+}
+
+.login-remember{
+    display: flex;
+    flex-direction: row;
+
+    height: 25px;
+
+    align-content: center;
+    align-items: center;
+}
+
+.login-forgot-pass{
+    display: flex;
+    height: 100%;
+
+    align-items: center;
+}
+
+.login-btns{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    column-gap: 60px;
+
+    justify-content: center;
+    align-content: center;
+}
+
+.login-back-btn{
+    width: 150px;
+    height: 40px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #130000;
+    color: white;
+
+    font-size: 28px;
+}
+
+.login-continue-btn{
+    width: 150px;
+    height: 40px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #9D0000;
+    color: white;
+
+    font-size: 28px;
+}
+
+.unbind-title{
+    text-align: center;
+    width: 100%;
+}
